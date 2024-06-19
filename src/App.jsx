@@ -1,3 +1,9 @@
+import Busquedafactura from "./Busquedafactura"
+import Busquedaproducto from "./Busquedaproducto"
+import Busquedaproveedor from "./Busquedaproveedor"
+import Cambiofactura from "./Cambiofactura"
+import Cambioproducto from "./Cambioproducto"
+import Cambioproveedor from "./Cambioproveedor"
 import Eliminarfactura from "./Eliminarfactura"
 import Eliminarproducto from "./Eliminarproducto"
 import Eliminarproveedor from "./Eliminarproveedor"
@@ -24,6 +30,12 @@ function App() {
           <Route path="/Eliminarfactura" element={<Eliminarfactura/>}></Route>
           <Route path="/Eliminarproducto" element={<Eliminarproducto/>}></Route>
           <Route path="/Eliminarproveedor" element={<Eliminarproveedor/>}></Route>
+          <Route path="/Cambioproveedor" element={<Cambioproveedor/>}></Route>
+          <Route path="/Cambioproducto" element={<Cambioproducto/>}></Route>
+          <Route path="/Cambiofactura" element={<Cambiofactura/>}></Route>
+          <Route path="/Busquedafactura" element={<Busquedafactura/>}></Route>
+          <Route path="/Busquedaproducto" element={<Busquedaproducto/>}></Route>
+          <Route path="/Busquedaproveedor" element={<Busquedaproveedor/>}></Route>
           <Route path="/*" element={<Navigate to='/' />}></Route>
         </Routes>
       </div>
